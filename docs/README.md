@@ -10,14 +10,15 @@ RESPOND is a virtual canvas that allows users to create art based on a poem they
 - [ ] Display three SVG shapes (a circle, triangle, and square) 
 - [ ] Drag and drop SVG shapes onto a canvas
 - [ ] Modify properties of the SVG objects (color, opacity, size)
-  - Extra functionality (bonus): 
-  - modify the SVG objects via a modal popup window
-  - be able to change the number of vertices on a shape
+
+**Extra functionality (bonus):**
+ - modify the SVG objects via a modal popup window
+ - be able to change the number of vertices on a shape
 
 ## Wireframe
-![wireframe](./respond.png)
+This app will consist of a single app. The generated poem will centered on the page with the three generated shapes below it. The canvas which users can draw on will sit below the shapes.
 
-This app will consist of a single app. The generated poem will centered on the page with the three generated shapes below it. The canvas which users can draw on will sit below the shapes/
+![wireframe](./respond.png)
 
 ## Technologies, plugins, and APIs
 RESPOND will be implemented using vanilla JavaScript, the SVG capabilities in HTML. No jQuery will be used, jsut vanilla DOM manipulation. 
