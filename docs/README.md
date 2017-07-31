@@ -1,7 +1,7 @@
-#RESPOND
+# RESPOND
 
 ## Background
-Sometimes seeing art inspires art. Often times museum visitors will visit an exhibit and feel inspired by what they see. Soldem can they respond and create something immediately based on what they are seeing. 
+Sometimes seeing art inspires art. Often times museum visitors will visit an exhibit and feel inspired by what they see. Soldem can they respond and create something immediately based on the art they're viewing. 
 
 RESPOND is a virtual canvas that allows users to create art based on a poem they read. Users are intentionally constrained to drawing on the canvas using only three shapes: a circle, a triangle, and square. These shapes will be initialized with a random opacity, color/gradient, and size but will be adjustable later with user input. 
 
@@ -10,7 +10,7 @@ RESPOND is a virtual canvas that allows users to create art based on a poem they
 - [ ] Display three SVG shapes (a circle, triangle, and square) 
 - [ ] Drag and drop SVG shapes onto a canvas
 - [ ] Modify properties of the SVG objects (color, opacity, size)
-Extra functionality (bonus): 
+  - Extra functionality (bonus): 
   - modify the SVG objects via a modal popup window
   - be able to change the number of vertices on a shape
 
@@ -33,10 +33,10 @@ The app will be broken down into the following scripts/source files:
   * utility code (if necessary)
 
 ## Implementation 
-**Day 1**
+**Day 1:**
 Set up the skeletons for the files listed above. Configure webpack config file. Start to learn SVG and DOM manipulation in the evening. 
 
-**Day 2** 
+**Day 2:** 
 Morning: Keep learning SVG properties and experiment rendering different shapes of different opacities, colors, and size onto a canvas.
 
 Install event handlers to make the shape objects drag and drop.
@@ -44,9 +44,9 @@ Install event handles to make the shape objects adjustable.
 
 Find either an API to fetch poems or compile some poems in the public domain into a JavaScript array in the util.js file. 
 
-**Day 3**
+**Day 3:**
 Install controlls and customization from the user. Style and polishing.
 
-**Day 4**
+**Day 4:**
 Implement extra functionality if on schedule. Otherwise keep working on core functionality and fixing any bugs. 
 
