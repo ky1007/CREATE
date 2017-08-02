@@ -2,7 +2,7 @@ var path = require("path");
 
 module.exports = {
   context: __dirname,
-  entry: "./lib/respond.js",
+  entry: "./lib/create.js",
   output: {
     path: path.resolve(__dirname),
     filename: "./lib/webpack.js"
