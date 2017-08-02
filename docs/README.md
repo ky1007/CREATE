@@ -1,57 +1,64 @@
-# RESPOND
+# CREATE
 
 ## Background
-Sometimes seeing art inspires art. Often times museum visitors will visit an exhibit and feel inspired by what they see. Seldom can they respond and create something immediately based on the art they're viewing. 
+Synthesia is a perceptual phenomenon where stimulation of one sensory function leads to an involuntary experience of another sensory function. 
 
-RESPOND is a virtual canvas that allows users to create art based on a poem they read. Users are intentionally constrained to drawing on the canvas using only three shapes: a circle, a triangle, and square. These shapes will be initialized with a random opacity, color/gradient, size, and animation but will be adjustable later with user input. 
+CREATE is a virtual canvas that allows users to type words, poems, or stories and see a those words translated into visualization of shapes and colors. 
+
+Certain words or groups of words will trigger a specific shape that's either a circle, a triangle, or square. Each shape will be initialized with a specific opacity, color/gradient, size, and animation based on patterns of the words.
 
 ## Functionality and MVP
-- [ ] Display a random poem generated either via fetch request to an existing poem API or poems stored in an array. 
-- [ ] Display three template SVG shapes (a circle, triangle, and square) 
-- [ ] Drag and drop multiple SVG shapes from the template SVG shapes onto a canvas
-- [ ] Modify properties of the SVG objects (color, opacity, size, animation)
+- [ ] Take user input and parse the input as one long string into a hash-like function
+- [ ] Have the output of the hash-like function determine which shape and what properties of that shape will have
+- [ ] Display the shapes on a canvas
+- [ ] Allow users to export and download their creation as an SVG file
 
 **Extra functionality (bonus):**
- - modify the SVG objects via a modal popup window
- - be able to change the number of vertices on a shape
- - allow users to draw on the canvas first before dragging and dropping shapes 
+ - Gamify the shape creation progress: give the shapes a physical properties of how they move through space on the canvas
+ - Have users try to balance stack the shapes so it reaches the top of the canvas
+ - Limit of the number of words the user can use to make it to the top of the canvas
 
 ## Wireframe
-The generated poem will centered on the page with the three template shapes below it. The canvas which users can drag and drop from the three template shapes will sit on the bottom of the page (below the template shapes).
-
-![wireframe](./respond.png)
+The user will type into a text box and a canvas will sit below it where the shapes will appear.
+![wireframe](./create.png)
 
 ## Technologies, plugins, and APIs
-RESPOND will be implemented using vanilla JavaScript, the SVG capabilities in HTML. No jQuery will be used, just vanilla DOM manipulation. If there's time to implement drawing on a canvas, Canvas will also be used for that feature.
+CREATE will be implemented using vanilla JavaScript and the SVG capabilities in HTML. No jQuery will be used, just vanilla DOM manipulation. 
 
 The app will be broken down into the following scripts/source files:
 * `shapes.js`
-  * contains the logic of generating the SVG template shape objects with random opacity, color, shape, and animation
-* `interactivity.js`
-  * contains the logic allowing users to manipulate the shapes' opacity, color, and animation
-* `canvas.js`
-  * responsible for keeping track of all the shapes and their properties on a canvas
+  * will define three different classes for each shape (circle, square, triangle)
+  * when a new instance of each class is called a new SVG element containing the object's properties will be returned
+* `conversion.js`
+  * capture the user input text as one long string 
+  * pass the user input into a hash-like function to generate properties the shape objects should have
+  * the hash-like function should return new shape objects based on the string it receives
 * `RESPOND.js`
   * entry file
-* `util.js`
-  * utility code (if necessary)
 
 ## Implementation 
 **Day 1:**
-Set up the skeletons for the files listed above. Configure webpack config file. Start to learn SVG and DOM manipulation in the evening. 
+Set up the skeletons for the files listed above. Configure webpack config file.
+
+Setup all necessary Node modules, including getting webpack up and running. Create webpack.config.js as well as package.json. Write a basic entry file and the bare bones of all 3 scripts outlined above. Learn the basics SVG and DOM manipulation in the evening. Goals for the day:
+
+ * Get a green bundle with webpack
+ * Display an SVG on the the screen
 
 **Day 2:** 
-Morning: Keep learning SVG properties and experiment rendering different shapes of different opacities, colors, and size onto a canvas.
+Keep learning SVG properties and experiment rendering different shapes of different opacities, colors, and size onto a canvas.
 
- * Learn and implement how to make multiple shape objects appear on DOM via click user interaction.
- * Learn and implement event handlers to make the shape objects drag and drop.
- * Learn and implement event handles to make the shape attributes (opacity, size, color, animation) adjustable.
+ * Start working in the `shapes.js` to make shapes appear the new shape classes defined in that file
+ * Start working in `conversion.js` and implement how to make SVG shapes appear based on simple user input 
+ * Determine the rules of the hash-like function: what specific patterns of letters or ASCII characters will trigger specific properties
+ * Start implementing the rules of the hash-like function into code
 
-Find either an API to fetch poems or compile some poems in the public domain into a JavaScript array in the util.js file. 
 
 **Day 3:**
-Install controlls and customization logic for the user. Style and polishing.
+ * Continue working in `conversion.js` and implementing the rules that converts the string of text into shapes onto the canvas. 
+ * Ensure the results are aesthetically pleasing 
 
 **Day 4:**
-Implement extra functionality if on schedule. Otherwise keep working on core functionality and fixing any bugs. 
+ * Create the ability for users to export their creations into an SVG file they can download
+ * Implement extra functionality if on schedule. Otherwise keep working on core functionality and fixing any bugs
 
