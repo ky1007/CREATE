@@ -58,6 +58,6 @@ Find either an API to fetch poems or compile some poems in the public domain int
 **Day 3:**
 Work on hashing function inside `conversion.js` that takes user text input and parse the words into properties the shape objects will have. 
 
-**Day 4:**s
+**Day 4:**
 Implement extra functionality if on schedule. Otherwise keep working on core functionality and fixing any bugs. 
 
