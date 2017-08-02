@@ -4,22 +4,26 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./lib/webpack.js"></script>
+    <link href="css/style.css" rel="stylesheet"> 
+    
   </head>
   <body>
   
      <svg width="700" height="700">
-      <rect x="0" y="0" width="400" height="400" fill="#777777" />
+      <rect x="0" y="0" width="400" height="400" fill="#777777" 
+            class="draggable" 
+            transform="matrix(1 0 0 1 0 0)"
+            id="recc" />
     </svg> 
+    
+    <input type="number" name="" id="width-input"></input>
 
-    <svg width="400" height="400">
+    <!-- <svg width="400" height="400">
       <rect x="0" y="0" width="400" height="400" fill="#56A0D3" />
-    </svg>
+    </svg> -->
 
-    <script>
-      var rec = document.querySelector("rect");
-      rec.addEventListener("click", () => rec.style.fill="#eeeeee");
-    </script>
 
   </body>
 </html>

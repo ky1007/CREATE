@@ -2,12 +2,11 @@ var path = require("path");
 
 module.exports = {
   context: __dirname,
-  entry: "./frontend/privy.jsx",
+  entry: "./lib/respond.js",
   output: {
-    path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
-    filename: "respond.js"
+    path: path.resolve(__dirname),
+    filename: "./lib/webpack.js"
   },
-  plugins: plugins,
   module: {
     loaders: [
       {
