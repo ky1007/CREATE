@@ -1,4 +1,4 @@
-# RESPOND
+# CREATE
 
 ## Background
 Sometimes seeing art inspires art. Often times museum visitors will visit an exhibit and feel inspired by what they see. Seldom can they respond and create something immediately based on the art they're viewing. 

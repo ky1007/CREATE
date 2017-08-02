@@ -1,3 +1,23 @@
-.draggable {
-  cursor: move;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
+
+h1 {
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  box-sizing: border-box;
+  outline: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+}
+
+/* --- LAYOUT --- */
+.main-container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 900px;
+} 
