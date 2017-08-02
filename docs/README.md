@@ -5,7 +5,7 @@ Synthesia is a perceptual phenomenon where stimulation of one sensory function l
 
 CREATE is a virtual canvas that allows users to type words, poems, or stories and see a those words translated into visualization of shapes and colors. 
 
-Certain words or groups of words will trigger a specific shape that's either a circle, a triangle, or square. Each shape will be initialized with a specific opacity, color/gradient, size, and animation based on patterns of the words.
+Certain letters or patterns of letters will trigger a specific shape that's either a circle, a triangle, or square. Each shape will be initialized with a specific opacity, color/gradient, size, and animation based on the letters the user inputs.
 
 ## Functionality and MVP
 - [ ] Take user input and parse the input as one long string into a hash-like function
@@ -19,7 +19,8 @@ Certain words or groups of words will trigger a specific shape that's either a c
  - Limit of the number of words the user can use to make it to the top of the canvas
 
 ## Wireframe
-The user will type into a text box and a canvas will sit below it where the shapes will appear.
+The user will type into a text box and a canvas will sit below it. The shapes will appear on this canvas. 
+
 ![wireframe](./create.png)
 
 ## Technologies, plugins, and APIs
@@ -27,13 +28,13 @@ CREATE will be implemented using vanilla JavaScript and the SVG capabilities in 
 
 The app will be broken down into the following scripts/source files:
 * `shapes.js`
-  * will define three different classes for each shape (circle, square, triangle)
+  * defines three different classes for each shape (circle, square, triangle)
   * when a new instance of each class is called a new SVG element containing the object's properties will be returned
 * `conversion.js`
-  * capture the user input text as one long string 
-  * pass the user input into a hash-like function to generate properties the shape objects should have
+  * captures the user input text as one long string 
+  * passes the user input into a hash-like function to generate properties the shape objects should have
   * the hash-like function should return new shape objects based on the string it receives
-* `RESPOND.js`
+* `create.js`
   * entry file
 
 ## Implementation 
@@ -61,4 +62,3 @@ Keep learning SVG properties and experiment rendering different shapes of differ
 **Day 4:**
  * Create the ability for users to export their creations into an SVG file they can download
  * Implement extra functionality if on schedule. Otherwise keep working on core functionality and fixing any bugs
-
