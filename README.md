@@ -5,12 +5,12 @@ CREATE is a virtual canvas that allows users to type words, poems, or stories an
 
 Certain letters or patterns of letters will trigger a specific shape that's either a circle, a triangle, or square. Each shape will be initialized with a specific opacity, color/gradient, size, and animation based on the letters the user inputs.
 
-Try it out: [live link]((https://ky1007.github.io/CREATE/))
+Try it out: [live link](https://ky1007.github.io/CREATE/)
 
 ## Implementations 
 
 ### Stretching the SVG canvas to fill its container
-Instead of having a fixed width and height for the SVG canvas, the canvas width is determined by the size of its parent container. The container `<section class="right">` is a flex child that fills the entire right side of the browser.
+Instead of having a fixed width and height for the SVG canvas, the canvas width is determined by the size of its parent container. The parent container `<section class="right">` is a flex child that fills the entire right side of the browser.
 
 Getting the size of the parent container required using a DOM function called `getBoundingClientRect()` that returns an object containing information about the selected element's height and width.
 ```javascript
@@ -48,6 +48,8 @@ switch (character) {
         break;
 ```
 Here the letter 'a' modifies a properties object that tallies votes from a group of characters. The property with the highest number of votes wins. 
+
+Some properties like x/y coordinates and size are mapped to calculated numerical values based on the canvas height and width. These numerical values contribute to a weight average to determine the final property. 
 
 ## Future plans
 ### Changing how the canvas re-renders
