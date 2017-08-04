@@ -116,9 +116,17 @@ textarea {
     background-color: none;  
   /*  border: 1px solid black;  */
 }
-.download a { display: none; }
+
+.download a { 
+  display: none;
+  color: #444;
+  text-decoration: none; 
+}
+
 .download .visible {
   display: inline;
-  color: #444;
-  text-decoration: none;
+}
+
+.download a:hover {
+  color: #ddd;
 }
