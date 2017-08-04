@@ -58,6 +58,6 @@ textarea {
 }
 
 #canvas {
-  /* background-color: #eee; */
-  /* border: 1px solid black; */
+    background-color: none;  
+  /*  border: 1px solid black;  */
 }
