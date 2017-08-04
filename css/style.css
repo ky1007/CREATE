@@ -1,7 +1,13 @@
 /* --- RESETS --- */
-body, h1, h2, p, textarea, .right {
+body, h1, h2, p, textarea, pre, .right {
   margin: 0;
   padding: 0;
+}
+
+textarea, 
+pre {
+  outline: 0;
+  border: 0;
 }
 
 
@@ -22,16 +28,66 @@ h2 {
   font-size: 1.5rem;
 }
 
+/* --- TEXTAREA  --- */
 textarea {
-  margin-top: 3rem;
-  box-sizing: border-box;
-  outline: none;
-  width: 100%;
+   margin-top: 3rem; 
+  /* outline: none; */
+  /* box-sizing: border-box; */
+  width: 100%; 
+  height: 8rem;
   color: #fff;
   background: black;
   font-size: 1rem;
   font-family: 'Quicksand', sans-serif;
-  border: none;
+  resize: none;
+}
+
+.expandingArea {
+  position: relative;
+}
+
+.expandingArea > textarea,
+.expandingArea > pre {
+  padding: 5px;
+  background: transparent;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.expandingArea > textarea {
+  /* The border-box box model is used to allow
+   * padding whilst still keeping the overall width
+   * at exactly that of the containing element.
+   */
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  /* This height is used when JS is disabled */
+  height: 100px;
+}
+
+.expandingArea.active > textarea {
+  /* Hide any scrollbars */
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  /* Remove WebKit user-resize widget */
+  resize: none;
+}
+
+.expandingArea > pre {
+  display: none;
+}
+.expandingArea.active > pre {
+  display: block;
+  /* Hide the text; just using it for sizing */
+  visibility: hidden;
 }
 
 /* --- LAYOUT --- */
@@ -59,4 +115,10 @@ textarea {
 #canvas {
     background-color: none;  
   /*  border: 1px solid black;  */
+}
+.download a { display: none; }
+.download .visible {
+  display: inline;
+  color: #444;
+  text-decoration: none;
 }
