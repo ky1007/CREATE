@@ -21,3 +21,7 @@ textarea {
   text-align: center;
   max-width: 900px;
 } 
+
+#canvas {
+  background-color: #eee;
+}
