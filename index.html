@@ -4,24 +4,28 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./lib/webpack.js"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Federo|Quicksand" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> 
-    
   </head>
   <body>
     <main class="main-container">
+      <section class="left">
+        <header>
+          <h1>CREATE</h1>
+          <h2>Visual synthesia for words</h2>
+        </header>
       
-      <header>
-        <h1>CREATE</h1>
-        <h2>Visual synthesia for words</h2>
-      </header>
-    
-      <textarea id="words"></textarea>
+        <textarea id="words" 
+                  autofocus
+                  placeholder="start typing"></textarea>
 
-      <svg width="400" height="400" id="canvas"> 
-      </svg>
-
+      </section>
+      
+      <section class="right">
+        <svg width="400" height="400" id="canvas"> 
+        </svg>
+      </section>
     </main>
   </body>
 </html>

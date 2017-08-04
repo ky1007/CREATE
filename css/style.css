@@ -1,28 +1,63 @@
+/* --- RESETS --- */
+body, h1, h2, p textarea {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* --- STYLING BEGINS--- */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
 }
 
 h1 {
-  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Federo', sans-serif;
+  font-size: 5rem;
+}
+
+h2 {
+  color: #aaa;
+  font-size: 1.5rem;
 }
 
 textarea {
+  margin-top: 3rem;
   box-sizing: border-box;
   outline: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   width: 100%;
+  color: #fff;
+  background: black;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  border: none;
 }
 
 /* --- LAYOUT --- */
 .main-container {
   margin: 0 auto;
   text-align: center;
-  max-width: 900px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 } 
+
+.left {
+  flex: 1;
+  background: black;
+  padding: 4rem;
+}
+
+.right {
+  flex: 2;
+  /* background: gray; */
+}
 
 #canvas {
   /* background-color: #eee; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
