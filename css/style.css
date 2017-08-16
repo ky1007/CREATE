@@ -34,7 +34,7 @@ textarea {
   /* outline: none; */
   /* box-sizing: border-box; */
   width: 100%; 
-  height: 8rem;
+  height: 12rem;
   color: #fff;
   background: black;
   font-size: 1rem;
@@ -117,16 +117,26 @@ textarea {
   /*  border: 1px solid black;  */
 }
 
-.download a { 
-  display: none;
-  color: #444;
+footer {
+  bottom: 0;
+}
+
+/* --- LINK STYLING --- */
+a {
+  color: #aaa;
   text-decoration: none; 
+}
+
+a:hover {
+  color: #ddd;
+}
+
+.download a { 
+  display: none; 
+  color: #444;
 }
 
 .download .visible {
   display: inline;
 }
 
-.download a:hover {
-  color: #ddd;
-}
