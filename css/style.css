@@ -57,6 +57,7 @@ textarea {
   background: black;
   padding: 3rem;
   display: flex;
+  flex-direction: column;  
 }
 
 .right {
@@ -72,20 +73,15 @@ textarea {
 }
 
 footer {
-  /* position: relative;
-  bottom: 0; */
-  /* margin: 0 auto; */
-  text-align: center;
-  /* width: 100%; */
-  align-self: flex-end;
-  /* align-items: flex-end; */
-  /* align-content: flex-end; */
-  background: #fff;
-  justify-content: center;
-  /* flex: 1; */
-  /* display: block; */
+  display: flex;
+  justify-content: CENTER;
+  flex: 1;
 }
 
+footer div {
+  align-self: flex-end;
+  text-align: center;
+}
 
 /* --- LINK STYLING --- */
 a {
