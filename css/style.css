@@ -101,3 +101,22 @@ a:hover {
 .download .visible {
   display: inline;
 }
+
+/* --- STYLE PLACEHOLDER TEXT --- */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #ddd;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color: #ddd;
+ opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color: #ddd;
+ opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #ddd;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #ddd;
+}
