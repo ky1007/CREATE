@@ -7,7 +7,7 @@ Certain letters or patterns of letters will trigger a specific shape that's eith
 
 Try it out: [live link](https://ky1007.github.io/CREATE/)
 
-[![docs/live-screenshot.gif)](https://ky1007.github.io/CREATE/))
+![Live Screnshot](docs/live-screenshot.gif)
 
 ## Implementations 
 
