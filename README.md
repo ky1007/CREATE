@@ -51,7 +51,7 @@ switch (character) {
 ```
 Here the letter 'a' modifies a properties object that tallies votes from a group of characters. The property with the highest number of votes wins. 
 
-Some properties like x/y coordinates and size are mapped to calculated numerical values based on the canvas height and width. These numerical values contribute to a weight average to determine the final property. 
+Some properties like x/y coordinates and size are mapped to calculated numerical values based on the canvas height and width. These numerical values contribute to a weighted average to determine the final property. 
 
 ## Future plans
 ### Changing how the canvas re-renders
