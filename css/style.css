@@ -94,11 +94,10 @@ a:hover {
 }
 
 .download a { 
-  /* display: none;  */
+  display: none; 
   color: #eee;
 }
 
 .download .visible {
   display: inline;
 }
-
