@@ -94,8 +94,8 @@ a:hover {
 }
 
 .download a { 
-  display: none; 
-  color: #444;
+  /* display: none;  */
+  color: #eee;
 }
 
 .download .visible {
