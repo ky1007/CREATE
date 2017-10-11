@@ -1,7 +1,7 @@
 # CREATE
 
 ## Background
-Synthesia is a perceptual phenomenon where stimulation of one sensory function leads to an involuntary experience of another sensory function. 
+Synesthesia is a perceptual phenomenon where stimulation of one sensory function leads to an involuntary experience of another sensory function. 
 
 CREATE is a virtual canvas that allows users to type words, poems, or stories and see a those words translated into visualization of shapes and colors. 
 
