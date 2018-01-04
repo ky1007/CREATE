@@ -55,7 +55,7 @@ Some properties like x/y coordinates and size are mapped to calculated numerical
 
 ## Future plans
 ### Changing how the canvas re-renders
-Each keypress re-renders the entire SVG canvas. This isn't efficient. A future implementation could determine which specific SVG elements need to be changed based on the specific changes made in the user input textbox. 
+Each keypress re-renders the entire SVG canvas. A future implementation could map sections of strings to shapes and determine which specific SVG elements need to be changed based on the specific changes made in the string.
 
 ### Aesthetic changes
 Adding animations and rotations would make the canvas more dynamic. 
