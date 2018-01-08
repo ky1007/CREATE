@@ -1,5 +1,5 @@
 /* --- RESETS --- */
-body, h1, h2, p, textarea, pre, .right {
+body, h1, h2, h3, p, textarea, pre, .right {
   margin: 0;
   padding: 0;
 }
@@ -24,13 +24,23 @@ h1 {
 }
 
 h2 {
-  color: #aaa;
   font-size: 1.5rem;
+  color: #aaa;
+}
+
+h3 { 
+  font-size: 1.2rem;
+  text-align: left;
+  color: black;
+  background-color: yellow;
+  /* background-color: rgba(255,255, 0, 0.48); */
+  display: inline-block;
+  padding: 0.3rem;
 }
 
 /* --- TEXTAREA  --- */
 textarea {
-   margin-top: 3rem; 
+   margin-top: 0.4rem; 
   /* outline: none; */
   /* box-sizing: border-box; */
   width: 100%; 

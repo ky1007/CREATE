@@ -68,14 +68,16 @@
       // }
 
       // makeCORSReq();
-      function doStuff(json) {
-        alert(json, 'json');
-      }
+      
+      // ---- JSONP approach ----
+      // window.doStuff = function(json) {
+      //   console.log('object');
+      //   console.log(json, 'json');
+      // }
 
-      let script = document.createElement('script');
-      script.src = 'http://poetrydb.org/title/Ozymandias?function=doStuff';
-      console.log(script, 'script');
-      document.getElementsByTagName("head")[0].appendChild(script);
+      // let script = document.createElement('script');
+      // script.src = 'http://poetrydb.org/title/Ozymandias?callback=doStuff';
+      // document.getElementsByTagName("head")[0].appendChild(script);
     </script>
   </head>
   <body>
@@ -89,14 +91,16 @@
         <br>
         <br>
 
-        <input type="" name="" value="" onkeypress="" />
+        <h3><strong>Step One</strong>: choose a poem</h3>
+        <button id="activate">Emily Dickinson</button>
 
+        <br>
+        <br>
+
+        <h3>Step Two: see the poem</h3>
         <textarea id="words" 
                   autofocus
-                  placeholder="type out one of your favorite childhood memories..."></textarea>
-
-        <br>
-        <br>
+                  placeholder="typed out here"></textarea>
 
         <footer>
           <div> 
