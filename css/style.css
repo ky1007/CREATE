@@ -1,5 +1,5 @@
 /* --- RESETS --- */
-body, h1, h2, h3, p, textarea, pre, .right {
+body, h1, h2, h3, p, textarea, pre, .right, button {
   margin: 0;
   padding: 0;
 }
@@ -38,6 +38,36 @@ h3 {
   padding: 0.3rem;
 }
 
+button { 
+  background-color: gray;
+  color: white;
+  padding: .3rem;
+  border: 0;
+  box-shadow: 4px 4px #444;
+  display: block;
+  margin: .8rem 0.9rem;
+  font-size: 1rem;
+  cursor: hand;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fff;
+  box-shadow: 4px 4px rgb(255, 255, 0);
+  color: #000;
+}
+
+button:active {
+  background-color: yellow;
+}
+
+button:focus {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 4px 4px rgb(255, 255, 0);
+  outline: none;
+}
+
 /* --- TEXTAREA  --- */
 textarea {
    margin-top: 0.4rem; 
@@ -72,7 +102,6 @@ textarea {
 
 .right {
   flex: 3;
-  /* background: gray; */
   padding: 0;
   margin: 0;
   position: relative;
@@ -80,7 +109,6 @@ textarea {
 
 #canvas {
     background-color: none;  
-  /*  border: 1px solid black;  */
 }
 
 footer {
