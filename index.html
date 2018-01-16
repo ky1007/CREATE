@@ -17,68 +17,6 @@
     <link href="https://fonts.googleapis.com/css?family=Federo|Quicksand" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
     <link href="css/style.css" rel="stylesheet">
-    <script>
-      // let oReq = new XMLHttpRequest(),
-      //     method = 'GET',
-      //     url = 'http://poetrydb.org/title/Ozymandias';
-      // oReq.open(method, url, true);
-      // oReq.withCredentials = true;
-      // oReq.onreadystatechange = () => {
-      //   if (oReq.readyState === XMLHttpRequest.DONE && oReq.status === 200) {
-      //     console.log(oReq.responseText);
-      //   }
-      // }
-      // oReq.send();
-
-      // let createCORSReq = (method, url) => {
-      //   let xhr = new XMLHttpRequest();
-      //   xhr.open(method, url, true);
-
-      //   // if ("withCredentials" in xhr) {
-      //   //   xhr.open(method, url, true);
-      //   // } else if (typeof XDomainRequest != "undefined") {
-      //   //   xhr = new XDomainRequest();
-      //   //   xhr.open(method, url);
-      //   // } else {
-      //   //   xhr = null;
-      //   // }
-      //   console.log(xhr, 'xhr');
-      //   return xhr;
-      // };
-
-      // let makeCORSReq = () => {
-      //   let url = 'http://poetrydb.org/title/Ozymandias';
-      //   let xhreq = createCORSReq('GET', url);
-      //   console.log(xhreq, 'xhreq');
-      //   if (!xhreq) {
-      //     alert('CORS not supported');
-      //     return;
-      //   }
-
-      //   xhreq.onload = function() {
-      //     let text = xhreq.responseTest;
-      //     alert('Reponse from CORS request to');
-      //   }
-
-      //   xhreq.onerror = function() {
-      //     alert('Whooops, error!')
-      //   }
-
-      //   xhreq.send(); 
-      // }
-
-      // makeCORSReq();
-      
-      // ---- JSONP approach ----
-      // window.doStuff = function(json) {
-      //   console.log('object');
-      //   console.log(json, 'json');
-      // }
-
-      // let script = document.createElement('script');
-      // script.src = 'http://poetrydb.org/title/Ozymandias?callback=doStuff';
-      // document.getElementsByTagName("head")[0].appendChild(script);
-    </script>
   </head>
   <body>
     <main class="main-container">
@@ -97,7 +35,8 @@
           <button>Emily Dickinson</button>
           <button>Oscar Wilde</button>
           <button>Maya Angelou</button>
-          <button>Robert Frost</button>
+          <button>Yours Truly</button>
+          <!-- <button>Robert Frost</button> -->
           <button id="create">Me! (I want to write my own poem)</button>
         </div>
 
